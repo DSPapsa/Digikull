@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width:device-width">	
+</head>
+
+<body>
+	<div class="Info">
+	<h1>REGISTRATION FORM</h1>
+	<form id="form" name="myForm">
+	<label for="first name">First Name</label>
+	<input type="text" id="first name" placeholder="first name" required>
+	<br><br>
+
+	<label for="middle name">Middle Name</label>
+	<input type="text" id="middle name" placeholder="middle name">
+	<br><br>
+
+	<label for="last name">Last Name</label>
+	<input type="text" id="last name" placeholder="last name" required>
+    <br><br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="abc@gmail.com" required>
+    <br><br>
+
+    <p>Select Your Gender</p>
+    <label for="male">Male</label>
+    <input type="Radio"  name="gender" id="male"></button>
+    <br>
+    <label for="female">Female</label>
+    <input type="Radio" name="gender" id="female" ></button>
+    <br><br>
+
+    <label for="no.">Phone</label>
+    <input type="number" id="no." placeholder="10-digit number" required>
+    <br><br>
+    
+    <label for="c">Enter your College Name</label>
+    <input type="text" id="c" list="college" required>
+    <datalist id="college">
+        <option value="Bharati vidyapeeth college of Engineering, Pune"></option>
+        <option value="Bharati vidyapeeth Womens college of Engineering, Pune"></option>
+        <option value="College of Engineering, Pune"></option>
+    	<option value="D.Y Patil College of Engineering,Pune "></option>
+    	<option value="Maharashtra Institute of Technology, Pune"></option>
+    	<option value="Pune Institute of Computer Technology,Pune"></option>
+    	<option value="sinhgad College of Engineering, Pune"></option>
+        <option value="Symbiosis Institute of Technology, Pune"></option>
+    </datalist>
+    <br><br>  
+
+    <label for="year">Select Your Passing Year</label>
+    <select id="year">
+    	<option value="2022">2022</option>
+    	<option value="2021">2021</option>
+    	<option value="2020">2020</option>
+    	<option value="2019">2019</option>
+    	<option value="2018">2018</option>
+    </select> 
+    <br><br> 
+
+    <label for="File">Upload your Resume</label>    
+    <input type="File" id="File" name="filesname"></input>
+    <br><br>
+
+    <div class="b">
+    <button type="Submit" id="sub" onclick="output()">SUBMIT</button>
+    </div>
+
+    <script type="text/javascript">
+	    function output()
+	    {
+	    	alert("Your Form is Submitted,THANK YOU");
+	    }
+    </script>
+
+    </form>
+    </div>
+</body>
+</html>
+
+
