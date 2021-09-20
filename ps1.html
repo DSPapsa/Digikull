@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function firstUnique(array){
+  for(let i=0;i<array.length;i++){
+    let myArray = array[i];
+    if(array.indexOf(array[i])===array.lastIndexOf(array[i])){
+      return '${myArray} is unique no.';
+    }
+  }
+  return '${null}';
+}
+let arr=[5,3,5,2,9,3,2,0,9];
+console.log(firstUnique(arr));
+
+// 
+
+            function rotate(arr1,num){
+    const index = arr1.indexOf(num);
+    const sliced = arr1.splice(index,arr1.length);
+    return [...sliced,...arr1];
+}
+const arr1 = [9,8,7,6,5,4,3,2,1,0];
+console.log(rotate(arr1,5));
+        
+
+
+
+        </script>
+    </body>
+</html>
