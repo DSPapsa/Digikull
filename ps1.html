@@ -6,10 +6,10 @@
   for(let i=0;i<array.length;i++){
     let myArray = array[i];
     if(array.indexOf(array[i])===array.lastIndexOf(array[i])){
-      return '${myArray} is unique no.';
+      return `${myArray} is unique no.`;
     }
   }
-  return '${null}';
+  return `${null}`;
 }
 let arr=[5,3,5,2,9,3,2,0,9];
 console.log(firstUnique(arr));
